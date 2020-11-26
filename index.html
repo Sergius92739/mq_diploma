@@ -63,7 +63,7 @@
   <header class="main-header">
     <div class="container container-logo-nav">
       <div class="logo">
-        <img src="svg/noemi-logo.svg" alt="noemi" width="180" height="40">
+        <a class="logo-link" href="#0"><img src="svg/noemi-logo.svg" alt="noemi" width="180" height="40"></a>
       </div>
       <button class="nav-btn">
         <span class="nav-btn-text">открыть меню</span>
@@ -158,8 +158,10 @@
               <div class="author">Неизвестный автор</div>
             </div>
             <div class="excerpt">
-              Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи
-              еще закрыты. Что посмотреть?
+              <p class="passage">
+                Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи
+                еще закрыты. Что посмотреть?
+              </p>
             </div>
           </div>
         </article>
@@ -179,8 +181,10 @@
               <div class="author">Неизвестный автор</div>
             </div>
             <div class="excerpt">
-              Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что
-              можно найти в шкафу.
+              <p class="passage">
+                Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что
+                можно найти в шкафу.
+              </p>
             </div>
           </div>
         </article>
@@ -200,8 +204,10 @@
               <div class="author">Неизвестный автор</div>
             </div>
             <div class="excerpt">
-              Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-              Мы составили список лучших летних фестивалей по всему миру.
+              <p class="passage">
+                Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+                Мы составили список лучших летних фестивалей по всему миру.
+              </p>
             </div>
           </div>
         </article>
@@ -222,8 +228,10 @@
               <div class="author">Неизвестный автор</div>
             </div>
             <div class="excerpt">
-              Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и
-              микробиологию еды.
+              <p class="passage">
+                Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и
+                микробиологию еды.
+              </p>
             </div>
           </div>
         </article>
@@ -245,8 +253,10 @@
               <div class="author">Неизвестный автор</div>
             </div>
             <div class="excerpt">
-              Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется
-              чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
+              <p class="passage">
+                Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется
+                чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
+              </p>
             </div>
           </div>
         </article>
@@ -306,14 +316,19 @@
             </div>
           </article>
           <form class="search" action="#">
-            <input class="search-field" type="search" placeholder="Найти..." required>
+            <input id="search-field" class="search-field" type="search" placeholder="Найти..." required>
+            <label class="label" for="search-field"><span class="hint">Поиск</span></label>
             <button class="search-button" type="submit"><span class="text-button">найти</span></button>
           </form>
         </div>
         <div class="aside-item">
           <h2 class="title title-section title-item">рассылка</h2>
           <form class="email" action="#">
-            <input class="email-field mailing" type="email" placeholder="Ваш email-адрес" required>
+            <label class="label" for="">
+              <input class="email-field mailing" type="email" placeholder="Ваш email-адрес" required><span
+                class="hint">Ваш
+                email-адрес</span>
+            </label>
             <button class="button mailing" type="submit">подписаться</button>
           </form>
         </div>
@@ -334,28 +349,28 @@
           <h2 class="title title-section title-item">темы</h2>
           <ul class="topic-list">
             <li class="topic-item">
-              <a href="#0" class="topic-link">Красота</a>
-              <span class="topic-number">12</span>
+              <span class="topic-number n1">12</span>
+              <a href="#0" class="topic-link">Красота</a>             
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Здоровье</a>
-              <span class="topic-number">4</span>
+              <span class="topic-number n2">4</span>
+              <a href="#0" class="topic-link">Здоровье</a>              
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Образ жизни</a>
-              <span class="topic-number">145</span>
+              <span class="topic-number n3">145</span>
+              <a href="#0" class="topic-link">Образ жизни</a>             
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Музыка</a>
-              <span class="topic-number">28</span>
+              <span class="topic-number n4">28</span>
+              <a href="#0" class="topic-link">Музыка</a>             
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Спорт</a>
-              <span class="topic-number">62</span>
+              <span class="topic-number n5">62</span>
+              <a href="#0" class="topic-link">Спорт</a>             
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Йога</a>
-              <span class="topic-number">8</span>
+              <span class="topic-number n6">8</span>
+              <a href="#0" class="topic-link">Йога</a>             
             </li>
           </ul>
         </div>
@@ -444,15 +459,25 @@
       </div>
     </section>
   </main>
-  <footer class="footer ">
+  <footer class="footer">
     <address class="contacts">
-      <div class="socials">
-        <a href="#0" class="social" id="twitter"><span class="social-text">twitter</span></a>
-        <a href="#0" class="social" id="pinterest"><span class="social-text">pinterest</span></a>
-        <a href="#0" class="social" id="facebook"><span class="social-text">facebook</span></a>
-        <a href="#0" class="social" id="instagram"><span class="social-text">instagram</span></a>
-        <a href="#0" class="social" id="tumbrl"><span class="social-text">tumbrl</span></a>
-      </div>
+      <ul class="socials">
+        <li class="item-socials">
+            <a href="#0" class="social twitter"><span class="social-text">twitter</span></a>
+        </li>
+        <li class="item-socials">
+            <a href="#0" class="social pinterest"><span class="social-text">pinterest</span></a>
+        </li>
+        <li class="item-socials">
+            <a href="#0" class="social facebook"><span class="social-text">facebook</span></a>
+        </li>
+        <li class="item-socials">
+            <a href="#0" class="social instagram"><span class="social-text">instagram</span></a>
+        </li>
+        <li class="item-socials">
+            <a href="#0" class="social tumbrl"><span class="social-text">tumbrl</span></a>
+        </li>
+    </ul>
     </address>
     <div class="copyright">
       <a href="0#" class="copy-link">Copyright &copy; 2009-2019 City Blog LLC.</a>
