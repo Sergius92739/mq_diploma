@@ -341,7 +341,7 @@
     }
     .container {
         flex-direction: column;
-        max-width: 381px;
+        max-width: 470px;
         padding: 0 15px;
     }
     .nav {
@@ -727,7 +727,7 @@
 
 /* article */
 .image {
-    max-width: 100%;
+    width: 100%;
 }   
 
 .link-title {
